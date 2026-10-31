@@ -1,4 +1,4 @@
-# HJFR phishing IOCs - IP addresses to BLOCK (phishing landing infrastructure)
+# HJFR phishing IOCs - IPs of the phishing landing servers - ALERT; block only after confirming the IP hosts no legitimate services (prefer url-block.txt)
 # Campaign(s): PT-BANK-DATAUPDATE-2026-10 | TLP:CLEAR | License: CC BY 4.0 | generated 2026-10-31
 # Source: https://github.com/HJFR/phishing-iocs-pt - one entry per line
 217.60.237.162

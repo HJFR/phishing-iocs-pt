@@ -38,7 +38,7 @@
       "modified": "2026-10-31T18:00:00.000Z",
       "created_by_ref": "identity--5bba6540-7c1f-5fe3-a52f-3010041d4b5a",
       "name": "ipv4: 217.60.237.162",
-      "description": "phishing landing - «Caixa Empresas» (CGD) lure - AS200912 KRAUSE-AS / vpslayer NL",
+      "description": "phishing landing - «Caixa Empresas» (CGD) lure - AS200912 KRAUSE-AS / vpslayer NL. Prefer blocking the full URLs; block the IP only after confirming it hosts no legitimate services",
       "indicator_types": [
         "malicious-activity"
       ],
@@ -114,7 +114,7 @@
       "modified": "2026-10-31T18:00:00.000Z",
       "created_by_ref": "identity--5bba6540-7c1f-5fe3-a52f-3010041d4b5a",
       "name": "ipv4: 217.60.237.104",
-      "description": "phishing landing - «Millennium Private» (BCP) lure - AS200912 KRAUSE-AS / vpslayer NL",
+      "description": "phishing landing - «Millennium Private» (BCP) lure - AS200912 KRAUSE-AS / vpslayer NL. Prefer blocking the full URLs; block the IP only after confirming it hosts no legitimate services",
       "indicator_types": [
         "malicious-activity"
       ],

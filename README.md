@@ -5,8 +5,8 @@ Indicadores de compromisso de campanhas de phishing analisadas pela HJFR em Port
 
 | Ficheiro | Conteúdo | Ação |
 |---|---|---|
-| `feeds/ip-block.txt` | IPs da infraestrutura de phishing (IPv4 + IPv6 mapeado) | Bloquear |
-| `feeds/url-block.txt` | URLs dos e-mails (forma original + IPv4 normalizada) | Bloquear |
+| `feeds/url-block.txt` | **URLs completos** dos e-mails (forma original + IPv4 normalizada) — IOC principal | **Bloquear** (proxy, filtro web, gateway de correio) |
+| `feeds/ip-review.txt` | IPs dos servidores das páginas falsas (IPv4 + IPv6 mapeado) | **Alertar**; bloquear só depois de confirmar que o IP não aloja serviços legítimos |
 | `feeds/email-sender-block.txt` | Remetentes | Quarentena / bloquear |
 | `feeds/sha256.txt` | SHA-256 dos `.eml` | Pesquisa / EDR |
 | `feeds/patterns.txt` | Regex de assunto e URL | Alertar |
@@ -20,5 +20,9 @@ As marcas foram imitadas pelos atacantes e não têm responsabilidade nestas cam
 
 Falsos positivos: https://www.hjfr-info.pt/contacto · Disponibilizado «tal como está», sem garantias.
 
-*EN: Phishing IOCs observed in Portugal by HJFR (TLP:CLEAR, CC BY 4.0). Block `*-block.txt`; alert on `patterns.txt`;
-do not blindly block `ip-context-report-only.txt` (shared hosting relays).*
+Bloquear pelo URL completo é preciso e não afeta outros sites que partilhem o mesmo IP; bloquear um IP inteiro pode cortar
+o acesso a serviços legítimos.
+
+*EN: Phishing IOCs observed in Portugal by HJFR (TLP:CLEAR, CC BY 4.0). Block the full URLs (`url-block.txt`) and senders;
+alert on `ip-review.txt` and block those IPs only after confirming they host nothing legitimate; alert on `patterns.txt`;
+do not block `ip-context-report-only.txt` (shared hosting relays).*

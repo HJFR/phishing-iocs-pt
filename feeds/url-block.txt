@@ -1,4 +1,4 @@
-# HJFR phishing IOCs - URLs to BLOCK (phishing links, as written and normalised)
+# HJFR phishing IOCs - full URLs to BLOCK (primary IOC - precise, does not affect other sites on the same IP)
 # Campaign(s): PT-BANK-DATAUPDATE-2026-10 | TLP:CLEAR | License: CC BY 4.0 | generated 2026-10-31
 # Source: https://github.com/HJFR/phishing-iocs-pt - one entry per line
 http://[0000:0000:0000:0000:0000:FFFF:D93C:ED68]/k6w-exu?lang=pt
