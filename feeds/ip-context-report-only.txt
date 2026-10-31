@@ -1,4 +1,4 @@
-# HJFR phishing IOCs - shared hosting that RELAYED the campaign - report to abuse, do NOT block blindly
+# HJFR phishing IOCs - hosting servers seen in the headers as the sending path - report to the provider, do NOT block blindly
 # Campaign(s): PT-BANK-DATAUPDATE-2026-10 | TLP:CLEAR | License: CC BY 4.0 | generated 2026-10-31
 # Source: https://github.com/HJFR/phishing-iocs-pt - one entry per line
 92.205.209.185
