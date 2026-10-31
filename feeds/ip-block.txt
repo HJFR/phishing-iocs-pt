@@ -1,0 +1,7 @@
+# HJFR phishing IOCs - IP addresses to BLOCK (phishing landing infrastructure)
+# Campaign(s): PT-BANK-DATAUPDATE-2026-10 | TLP:CLEAR | License: CC BY 4.0 | generated 2026-10-31
+# Source: https://github.com/HJFR/phishing-iocs-pt - one entry per line
+217.60.237.162
+::ffff:217.60.237.162
+217.60.237.104
+::ffff:217.60.237.104

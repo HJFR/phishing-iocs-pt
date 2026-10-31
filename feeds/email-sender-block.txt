@@ -1,0 +1,8 @@
+# HJFR phishing IOCs - e-mail senders to BLOCK/QUARANTINE at the mail gateway
+# Campaign(s): PT-BANK-DATAUPDATE-2026-10 | TLP:CLEAR | License: CC BY 4.0 | generated 2026-10-31
+# Source: https://github.com/HJFR/phishing-iocs-pt - one entry per line
+dsp-k1a3jp-core@ispgateway.de
+alert-zvjl7p-disp@ispgateway.de
+batch-ab3txo-proxy@ispgateway.de
+csh-8upbd3@smtp-out-hp3.livemail.co.uk
+csh-cmq0v3@smtp-out-hp3.livemail.co.uk

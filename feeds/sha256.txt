@@ -1,0 +1,9 @@
+# HJFR phishing IOCs - SHA-256 of the phishing .eml files
+# Campaign(s): PT-BANK-DATAUPDATE-2026-10 | TLP:CLEAR | License: CC BY 4.0 | generated 2026-10-31
+# Source: https://github.com/HJFR/phishing-iocs-pt - one entry per line
+23eea1e2e61645f7fb6f97809d12965121fbf9f9665a38d8e53ea961f201c07a
+2cca9ff44dae5203117267fa28ac638547d038d004c0f398efd7e5902d731adb
+f86108fae19445015a41ea40ee41c01c95505605eef020bf9368c30db9501642
+631438ebc797de4eaeac2b1414f8839d0d329219b825c2312bcfbdb9bf31eca4
+349aaad3bf167e1abb469dc22557b251f6866c70b6eed7e7ccf11968852c6c3e
+e8c33c2dd63a86a60afe06166c19526b1d5eaeeb7e1649aaf1655cb7c4818265

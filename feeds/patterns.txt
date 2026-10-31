@@ -1,0 +1,5 @@
+# HJFR phishing IOCs - regex patterns (subject, URL) for alerting
+# Campaign(s): PT-BANK-DATAUPDATE-2026-10 | TLP:CLEAR | License: CC BY 4.0 | generated 2026-10-31
+# Source: https://github.com/HJFR/phishing-iocs-pt - one entry per line
+email-subject-regex	^(?:(?:Fwd|RE):\s*)?(?:Caixa Empresas|Millennium Private) · Atualização dos dados · #[A-Z0-9]{10}$
+url-regex	^http://\[?(?:0000:){5}FFFF:[0-9A-F]{4}:[0-9A-F]{4}\]?/[a-z0-9]{3}-[a-z0-9]{3}\?lang=pt$
