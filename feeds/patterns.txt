@@ -3,3 +3,8 @@
 # Source: https://github.com/HJFR/phishing-iocs-pt - one entry per line
 email-subject-regex	^(?:(?:Fwd|RE):\s*)?(?:Caixa Empresas|Millennium Private) · Atualização dos dados · #[A-Z0-9]{10}$
 url-regex	^http://\[?(?:0000:){5}FFFF:[0-9A-F]{4}:[0-9A-F]{4}\]?/[a-z0-9]{3}-[a-z0-9]{3}\?lang=pt$
+url-regex	^http://email\.(web\.apseed\.org|mail\.westalbemarle\.com|mail\.wearegraces\.org)/c/eJ[0-9A-Za-z_-]+$
+email-sender-regex	^bounce\+[0-9a-f]{6}\.[0-9a-f]{6,7}-[^=@]+=[^@]+@(web\.apseed\.org|mail\.westalbemarle\.com|mail\.wearegraces\.org)$
+url-regex	^https?://www\.[a-z0-9.-]+-brasilnf\d+@notaprincipalrf\.com
+url-regex	^https?://0[0-7]{8,11}(/|$)
+url-regex	^https://[0-9a-f]{10}\.nxcli\.io/(BCTT|ppl)/

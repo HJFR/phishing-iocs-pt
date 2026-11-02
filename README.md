@@ -13,6 +13,7 @@ Indicadores de compromisso de campanhas de phishing analisadas pela HJFR em Port
 | `feeds/phone-alert.txt` | Números de telefone de phishing por chamada (faturas falsas) | **Alertar** (helpdesk, sensibilização) |
 | `feeds/patterns.txt` | Regex de assunto e URL | Alertar |
 | `feeds/ip-context-report-only.txt` | Servidores de alojamento por onde os e-mails foram enviados (segundo os cabeçalhos) | **Não bloquear às cegas** |
+| `patterns/*.txt` | Exemplos para construir padrões (formato dos links e endereços), com os **dados da vítima substituídos** | Criar regras de deteção |
 | `iocs.csv` | Todos os indicadores com confiança, ação, datas e campanha | — |
 | `stix/*.json` | Bundle STIX 2.1 | MISP / OpenCTI |
 
@@ -35,6 +36,11 @@ As marcas citadas foram imitadas nas mensagens e não têm responsabilidade nela
 **Nota:** os indicadores descrevem o que a HJFR observou nas mensagens analisadas, nas datas indicadas. A presença de um
 servidor, endereço ou fornecedor nesta lista identifica infraestrutura técnica observada; não significa que o fornecedor ou o
 titular tenham participado ou tido conhecimento.
+
+**Dados da vítima:** nunca são publicados. Quando um link ou endereço do atacante inclui dados do destinatário (por exemplo,
+o endereço de e-mail codificado num link de rastreio ou num endereço de rejeição), publicamos o formato com esses dados
+substituídos por `vitima@exemplo.invalid` (domínio reservado, nunca é uma caixa real). Esses exemplos servem para construir
+padrões e não correspondem aos links reais.
 
 Correções: https://www.hjfr-info.pt/contacto · Disponibilizado «tal como está», sem garantias.
 
