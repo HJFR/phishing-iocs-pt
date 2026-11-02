@@ -1,5 +1,5 @@
 # HJFR phishing IOCs - full URLs to BLOCK (primary IOC - precise, does not affect other sites on the same IP)
-# Campaign(s): PT-BANK-DATAUPDATE-2026-10 | TLP:CLEAR | License: CC BY 4.0 | generated 2026-10-31
+# Campaign(s): DE-DISNEYPLUS-2026-06, FR-DECATHLON-2026-05, FR-KLARNA-2026-05, PT-AT-FATURA-2026-05, PT-BANCOCTT-2026-10, PT-BANK-DATAUPDATE-2026-10, PT-PAYPAL-2026-10, WEBROOT-CALLBACK-2026-06 | TLP:CLEAR | License: CC BY 4.0 | generated 2026-11-02
 # Source: https://github.com/HJFR/phishing-iocs-pt - one entry per line
 http://[0000:0000:0000:0000:0000:FFFF:D93C:ED68]/k6w-exu?lang=pt
 http://217.60.237.104/k6w-exu?lang=pt
@@ -11,3 +11,13 @@ http://[0000:0000:0000:0000:0000:FFFF:D93C:EDA2]/z49-51m?lang=pt
 http://217.60.237.162/z49-51m?lang=pt
 http://[0000:0000:0000:0000:0000:FFFF:D93C:EDA2]/8zg-y7i?lang=pt
 http://217.60.237.162/8zg-y7i?lang=pt
+https://tr.ee/cgH4Xl
+https://c7d6998f6b.nxcli.io/BCTT/bctt
+https://tr.ee/3NpIvc
+https://d00b658a5a.nxcli.io/ppl/
+https://www.hotmail.com-brasilnf629305157@notaprincipalrf.com
+https://qrcodeveloper.com/code/48XC9u-C_SFpvcY7
+http://010036057336/4Ogzgw23482JVnK488xgonolnbhw133UTYJVXRCNNGYGHP767793SBYC431920q1
+http://64.120.94.222/4Ogzgw23482JVnK488xgonolnbhw133UTYJVXRCNNGYGHP767793SBYC431920q1
+https://storage.googleapis.com/kontocheck/index.html
+https://storage.googleapis.com/disneyplus/index.html

@@ -1,0 +1,300 @@
+{
+  "type": "bundle",
+  "id": "bundle--c63242fb-fe3b-518d-8c0b-fe7138076dab",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--5bba6540-7c1f-5fe3-a52f-3010041d4b5a",
+      "created": "2026-11-02T22:00:00.000Z",
+      "modified": "2026-11-02T22:00:00.000Z",
+      "name": "HJFR (hjfr-info.pt)",
+      "identity_class": "organization",
+      "sectors": [
+        "technology"
+      ],
+      "contact_information": "https://www.hjfr-info.pt/contacto"
+    },
+    {
+      "type": "campaign",
+      "spec_version": "2.1",
+      "id": "campaign--d4f41be0-4822-51fe-8f05-90db9a6eae9e",
+      "created": "2026-11-02T22:00:00.000Z",
+      "modified": "2026-11-02T22:00:00.000Z",
+      "created_by_ref": "identity--5bba6540-7c1f-5fe3-a52f-3010041d4b5a",
+      "name": "FR-DECATHLON-2026-05",
+      "first_seen": "2026-05-22T15:01:38Z",
+      "last_seen": "2026-05-22T15:01:38Z",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "description": "Decathlon «reward» lure (fr-FR); link host written as an octal number (= IPv4). Facts observed in the received messages; listed infrastructure does not imply responsibility or knowledge of providers or account holders."
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--24a434f9-53a7-5f8a-9665-18ad8a9934ac",
+      "created": "2026-11-02T22:00:00.000Z",
+      "modified": "2026-11-02T22:00:00.000Z",
+      "created_by_ref": "identity--5bba6540-7c1f-5fe3-a52f-3010041d4b5a",
+      "name": "url: http://010036057336/4Ogzgw23482JVnK488xgonolnbhw133UTYJVXRCNNGYGHP767793SBYC431920q1",
+      "description": "link in the «Decathlon» phishing e-mail as written (octal host 010036057336 = 64.120.94.222)",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'http://010036057336/4Ogzgw23482JVnK488xgonolnbhw133UTYJVXRCNNGYGHP767793SBYC431920q1']",
+      "pattern_type": "stix",
+      "valid_from": "2026-05-22T15:01:38Z",
+      "labels": [
+        "phishing",
+        "france",
+        "retail"
+      ],
+      "confidence": 85,
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--cf30467b-88a1-58de-8443-23705dbf2acd",
+      "created": "2026-11-02T22:00:00.000Z",
+      "modified": "2026-11-02T22:00:00.000Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--24a434f9-53a7-5f8a-9665-18ad8a9934ac",
+      "target_ref": "campaign--d4f41be0-4822-51fe-8f05-90db9a6eae9e",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--50915439-0eb9-5107-b0a4-4af22fc20628",
+      "created": "2026-11-02T22:00:00.000Z",
+      "modified": "2026-11-02T22:00:00.000Z",
+      "created_by_ref": "identity--5bba6540-7c1f-5fe3-a52f-3010041d4b5a",
+      "name": "url: http://64.120.94.222/4Ogzgw23482JVnK488xgonolnbhw133UTYJVXRCNNGYGHP767793SBYC431920q1",
+      "description": "normalised IPv4 form of the «Decathlon» phishing link",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[url:value = 'http://64.120.94.222/4Ogzgw23482JVnK488xgonolnbhw133UTYJVXRCNNGYGHP767793SBYC431920q1']",
+      "pattern_type": "stix",
+      "valid_from": "2026-05-22T15:01:38Z",
+      "labels": [
+        "phishing",
+        "france",
+        "retail"
+      ],
+      "confidence": 85,
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--59dd15c6-5cd7-55d9-91bf-d52bade69cfc",
+      "created": "2026-11-02T22:00:00.000Z",
+      "modified": "2026-11-02T22:00:00.000Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--50915439-0eb9-5107-b0a4-4af22fc20628",
+      "target_ref": "campaign--d4f41be0-4822-51fe-8f05-90db9a6eae9e",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--1217c4a7-ade5-54c7-8c1d-ac1fb7cf19ad",
+      "created": "2026-11-02T22:00:00.000Z",
+      "modified": "2026-11-02T22:00:00.000Z",
+      "created_by_ref": "identity--5bba6540-7c1f-5fe3-a52f-3010041d4b5a",
+      "name": "ipv4: 64.120.94.222",
+      "description": "destination of the «Decathlon» phishing link - block only after confirming it hosts no legitimate services",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[ipv4-addr:value = '64.120.94.222']",
+      "pattern_type": "stix",
+      "valid_from": "2026-05-22T15:01:38Z",
+      "labels": [
+        "phishing",
+        "france",
+        "retail"
+      ],
+      "confidence": 60,
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d9030522-4627-5cac-90b1-1f2c9c2dc7d8",
+      "created": "2026-11-02T22:00:00.000Z",
+      "modified": "2026-11-02T22:00:00.000Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--1217c4a7-ade5-54c7-8c1d-ac1fb7cf19ad",
+      "target_ref": "campaign--d4f41be0-4822-51fe-8f05-90db9a6eae9e",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--5b8a941a-699a-57a8-a66c-76ad28a23885",
+      "created": "2026-11-02T22:00:00.000Z",
+      "modified": "2026-11-02T22:00:00.000Z",
+      "created_by_ref": "identity--5bba6540-7c1f-5fe3-a52f-3010041d4b5a",
+      "name": "email-sender: exclusive@Decathlonvcj.com",
+      "description": "sender of the «Decathlon» phishing e-mail",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[email-message:from_ref.value = 'exclusive@Decathlonvcj.com']",
+      "pattern_type": "stix",
+      "valid_from": "2026-05-22T15:01:38Z",
+      "labels": [
+        "phishing",
+        "france",
+        "retail"
+      ],
+      "confidence": 85,
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--e1789343-7fd9-5222-9fb3-17ff20e9f09f",
+      "created": "2026-11-02T22:00:00.000Z",
+      "modified": "2026-11-02T22:00:00.000Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--5b8a941a-699a-57a8-a66c-76ad28a23885",
+      "target_ref": "campaign--d4f41be0-4822-51fe-8f05-90db9a6eae9e",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--8a7a181a-156b-5e0d-b5db-bbc062a563dc",
+      "created": "2026-11-02T22:00:00.000Z",
+      "modified": "2026-11-02T22:00:00.000Z",
+      "created_by_ref": "identity--5bba6540-7c1f-5fe3-a52f-3010041d4b5a",
+      "name": "domain: decathlonvcj.com",
+      "description": "domain of the «Decathlon» phishing link / sender",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[domain-name:value = 'decathlonvcj.com']",
+      "pattern_type": "stix",
+      "valid_from": "2026-05-22T15:01:38Z",
+      "labels": [
+        "phishing",
+        "france",
+        "retail"
+      ],
+      "confidence": 85,
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--fee85d6c-367a-5e2c-9f32-c463297fa0e7",
+      "created": "2026-11-02T22:00:00.000Z",
+      "modified": "2026-11-02T22:00:00.000Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--8a7a181a-156b-5e0d-b5db-bbc062a563dc",
+      "target_ref": "campaign--d4f41be0-4822-51fe-8f05-90db9a6eae9e",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--47799a88-d7ed-5673-b2d3-c3b9c314ffd6",
+      "created": "2026-11-02T22:00:00.000Z",
+      "modified": "2026-11-02T22:00:00.000Z",
+      "created_by_ref": "identity--5bba6540-7c1f-5fe3-a52f-3010041d4b5a",
+      "name": "email-sender: 6lc18@WisokyCN.onmicrosoft.com",
+      "description": "sender of the «Decathlon» phishing e-mail (Return-Path, Microsoft 365 tenant)",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[email-message:from_ref.value = '6lc18@WisokyCN.onmicrosoft.com']",
+      "pattern_type": "stix",
+      "valid_from": "2026-05-22T15:01:38Z",
+      "labels": [
+        "phishing",
+        "france",
+        "retail"
+      ],
+      "confidence": 60,
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--72c3fb9b-4df1-50b7-8d63-cff0ec6e4432",
+      "created": "2026-11-02T22:00:00.000Z",
+      "modified": "2026-11-02T22:00:00.000Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--47799a88-d7ed-5673-b2d3-c3b9c314ffd6",
+      "target_ref": "campaign--d4f41be0-4822-51fe-8f05-90db9a6eae9e",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--2660f973-c07e-54e8-a6b5-15d086363264",
+      "created": "2026-11-02T22:00:00.000Z",
+      "modified": "2026-11-02T22:00:00.000Z",
+      "created_by_ref": "identity--5bba6540-7c1f-5fe3-a52f-3010041d4b5a",
+      "name": "sha256: 968c6ef44c8151b0264f01aff96e15149392fa068896586877e5911dddd3027e",
+      "description": "original e-mail file of the «Decathlon» phishing (2026-11-02-phishing-decathlon-fr-ip-octal)",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '968c6ef44c8151b0264f01aff96e15149392fa068896586877e5911dddd3027e']",
+      "pattern_type": "stix",
+      "valid_from": "2026-05-22T15:01:38Z",
+      "labels": [
+        "phishing",
+        "france",
+        "retail"
+      ],
+      "confidence": 85,
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--557f5629-68d2-5eda-b9e9-84def653bea7",
+      "created": "2026-11-02T22:00:00.000Z",
+      "modified": "2026-11-02T22:00:00.000Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--2660f973-c07e-54e8-a6b5-15d086363264",
+      "target_ref": "campaign--d4f41be0-4822-51fe-8f05-90db9a6eae9e",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    }
+  ]
+}

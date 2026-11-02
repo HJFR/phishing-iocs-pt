@@ -1,8 +1,17 @@
 # HJFR phishing IOCs - e-mail senders to BLOCK/QUARANTINE at the mail gateway
-# Campaign(s): PT-BANK-DATAUPDATE-2026-10 | TLP:CLEAR | License: CC BY 4.0 | generated 2026-10-31
+# Campaign(s): DE-DISNEYPLUS-2026-06, FR-DECATHLON-2026-05, FR-KLARNA-2026-05, PT-AT-FATURA-2026-05, PT-BANCOCTT-2026-10, PT-BANK-DATAUPDATE-2026-10, PT-PAYPAL-2026-10, WEBROOT-CALLBACK-2026-06 | TLP:CLEAR | License: CC BY 4.0 | generated 2026-11-02
 # Source: https://github.com/HJFR/phishing-iocs-pt - one entry per line
 dsp-k1a3jp-core@ispgateway.de
 alert-zvjl7p-disp@ispgateway.de
 batch-ab3txo-proxy@ispgateway.de
 csh-8upbd3@smtp-out-hp3.livemail.co.uk
 csh-cmq0v3@smtp-out-hp3.livemail.co.uk
+bctt.service@undefasgoin.com
+faturaeletronica@faturaedigital595029
+facturation.edf449136213553105@absi.ph
+exclusive@Decathlonvcj.com
+6lc18@WisokyCN.onmicrosoft.com
+noreply@web.apseed.org
+no-reply@mail.westalbemarle.com
+no-reply@mail.wearegraces.org
+mdastagir607@gmail.com

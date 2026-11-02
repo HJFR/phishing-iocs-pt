@@ -1,0 +1,4 @@
+# HJFR phishing IOCs - phone numbers given in call-back phishing - ALERT (helpdesk, awareness, call filtering)
+# Campaign(s): DE-DISNEYPLUS-2026-06, FR-DECATHLON-2026-05, FR-KLARNA-2026-05, PT-AT-FATURA-2026-05, PT-BANCOCTT-2026-10, PT-BANK-DATAUPDATE-2026-10, PT-PAYPAL-2026-10, WEBROOT-CALLBACK-2026-06 | TLP:CLEAR | License: CC BY 4.0 | generated 2026-11-02
+# Source: https://github.com/HJFR/phishing-iocs-pt - one entry per line
++1 808 673 0323

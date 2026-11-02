@@ -1,0 +1,108 @@
+{
+  "type": "bundle",
+  "id": "bundle--b74ea419-15e0-5855-abdb-9a162a2c51b4",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--5bba6540-7c1f-5fe3-a52f-3010041d4b5a",
+      "created": "2026-11-02T22:00:00.000Z",
+      "modified": "2026-11-02T22:00:00.000Z",
+      "name": "HJFR (hjfr-info.pt)",
+      "identity_class": "organization",
+      "sectors": [
+        "technology"
+      ],
+      "contact_information": "https://www.hjfr-info.pt/contacto"
+    },
+    {
+      "type": "campaign",
+      "spec_version": "2.1",
+      "id": "campaign--a2359805-fe5c-54c7-b860-5cd96f4f3bd3",
+      "created": "2026-11-02T22:00:00.000Z",
+      "modified": "2026-11-02T22:00:00.000Z",
+      "created_by_ref": "identity--5bba6540-7c1f-5fe3-a52f-3010041d4b5a",
+      "name": "WEBROOT-CALLBACK-2026-06",
+      "first_seen": "2026-06-01T13:08:09Z",
+      "last_seen": "2026-06-01T13:08:09Z",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "description": "fake «Webroot» renewal receipt asking the victim to call a phone number (call-back phishing). Facts observed in the received messages; listed infrastructure does not imply responsibility or knowledge of providers or account holders."
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--4bcde8c9-d55b-5b5f-bbe9-e84837cee06f",
+      "created": "2026-11-02T22:00:00.000Z",
+      "modified": "2026-11-02T22:00:00.000Z",
+      "created_by_ref": "identity--5bba6540-7c1f-5fe3-a52f-3010041d4b5a",
+      "name": "email-sender: mdastagir607@gmail.com",
+      "description": "sender of the «Webroot» phishing e-mail",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[email-message:from_ref.value = 'mdastagir607@gmail.com']",
+      "pattern_type": "stix",
+      "valid_from": "2026-06-01T13:08:09Z",
+      "labels": [
+        "phishing",
+        "callback"
+      ],
+      "confidence": 85,
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--6f0c2d4c-aefa-52b1-8f30-6a6897d6f658",
+      "created": "2026-11-02T22:00:00.000Z",
+      "modified": "2026-11-02T22:00:00.000Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--4bcde8c9-d55b-5b5f-bbe9-e84837cee06f",
+      "target_ref": "campaign--a2359805-fe5c-54c7-b860-5cd96f4f3bd3",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--b6a6d94c-4674-5b85-872a-82c9792ebca7",
+      "created": "2026-11-02T22:00:00.000Z",
+      "modified": "2026-11-02T22:00:00.000Z",
+      "created_by_ref": "identity--5bba6540-7c1f-5fe3-a52f-3010041d4b5a",
+      "name": "sha256: 7de1c09d34bb3431099d912dc1c9d0a8febd10c0ab400f30e67f59f764effe35",
+      "description": "original e-mail file of the «Webroot» phishing (2026-11-02-callback-webroot-fatura-falsa)",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = '7de1c09d34bb3431099d912dc1c9d0a8febd10c0ab400f30e67f59f764effe35']",
+      "pattern_type": "stix",
+      "valid_from": "2026-06-01T13:08:09Z",
+      "labels": [
+        "phishing",
+        "callback"
+      ],
+      "confidence": 85,
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--5c4f13a6-fceb-5ab1-b8b3-85639cc4bb52",
+      "created": "2026-11-02T22:00:00.000Z",
+      "modified": "2026-11-02T22:00:00.000Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--b6a6d94c-4674-5b85-872a-82c9792ebca7",
+      "target_ref": "campaign--a2359805-fe5c-54c7-b860-5cd96f4f3bd3",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    }
+  ]
+}
