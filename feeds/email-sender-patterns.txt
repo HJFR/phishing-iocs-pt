@@ -1,0 +1,1 @@
+^bounce\+[0-9a-f]{6}\.[0-9a-f]{6,7}-[^=@]+=[^@]+@(web\.apseed\.org|mail\.westalbemarle\.com|mail\.wearegraces\.org)$
