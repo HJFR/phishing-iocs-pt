@@ -1,0 +1,1 @@
+^(?:(?:Fwd|RE):\s*)?(?:Caixa Empresas|Millennium Private) · Atualização dos dados · #[A-Z0-9]{10}$

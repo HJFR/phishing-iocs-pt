@@ -1,6 +1,3 @@
-# HJFR phishing IOCs - hosting servers seen in the headers as the sending path - report to the provider, do NOT block blindly
-# Campaign(s): DE-DISNEYPLUS-2026-06, FR-DECATHLON-2026-05, FR-KLARNA-2026-05, PT-AT-FATURA-2026-05, PT-BANCOCTT-2026-10, PT-BANK-DATAUPDATE-2026-10, PT-PAYPAL-2026-10, WEBROOT-CALLBACK-2026-06 | TLP:CLEAR | License: CC BY 4.0 | generated 2026-11-02
-# Source: https://github.com/HJFR/phishing-iocs-pt - one entry per line
 92.205.209.185
 77.68.64.29
 213.171.202.25

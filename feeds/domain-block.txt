@@ -1,6 +1,3 @@
-# HJFR phishing IOCs - domains/subdomains used only by the phishing (never shared services) - BLOCK at DNS/proxy
-# Campaign(s): DE-DISNEYPLUS-2026-06, FR-DECATHLON-2026-05, FR-KLARNA-2026-05, PT-AT-FATURA-2026-05, PT-BANCOCTT-2026-10, PT-BANK-DATAUPDATE-2026-10, PT-PAYPAL-2026-10, WEBROOT-CALLBACK-2026-06 | TLP:CLEAR | License: CC BY 4.0 | generated 2026-11-02
-# Source: https://github.com/HJFR/phishing-iocs-pt - one entry per line
 c7d6998f6b.nxcli.io
 d00b658a5a.nxcli.io
 notaprincipalrf.com

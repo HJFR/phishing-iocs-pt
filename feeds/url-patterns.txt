@@ -1,0 +1,5 @@
+^http://\[?(?:0000:){5}FFFF:[0-9A-F]{4}:[0-9A-F]{4}\]?/[a-z0-9]{3}-[a-z0-9]{3}\?lang=pt$
+^http://email\.(web\.apseed\.org|mail\.westalbemarle\.com|mail\.wearegraces\.org)/c/eJ[0-9A-Za-z_-]+$
+^https?://www\.[a-z0-9.-]+-brasilnf\d+@notaprincipalrf\.com
+^https?://0[0-7]{8,11}(/|$)
+^https://[0-9a-f]{10}\.nxcli\.io/(BCTT|ppl)/
