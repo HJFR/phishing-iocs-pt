@@ -1,1 +1,4 @@
 ^bounce\+[0-9a-f]{6}\.[0-9a-f]{6,7}-[^=@]+=[^@]+@(web\.apseed\.org|mail\.westalbemarle\.com|mail\.wearegraces\.org)$
+^(campaign|bounce)\+[a-z0-9]{8,}@corsalamentum\.de$
+^(campaign|bounce)\+[a-z0-9]{8,}@muesel\-holzbau\.de$
+^(campaign|bounce)\+[a-z0-9]{8,}@schock\-rae\.de$
