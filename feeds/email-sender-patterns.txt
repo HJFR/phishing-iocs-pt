@@ -2,3 +2,5 @@
 ^(campaign|bounce)\+[a-z0-9]{8,}@corsalamentum\.de$
 ^(campaign|bounce)\+[a-z0-9]{8,}@muesel\-holzbau\.de$
 ^(campaign|bounce)\+[a-z0-9]{8,}@schock\-rae\.de$
+^\d+_\d+_\d+@hrline\.wileyc-edu\.xyz$
+^upspackagetracking\+\d+\+upspackagetracking@akano\.postaldelivery\.org$
